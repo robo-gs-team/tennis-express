@@ -78,60 +78,20 @@ button{font-family:var(--font);cursor:pointer}
 @media(max-width:480px){.hero-btns .btn{flex:1;justify-content:center}}
 
 /* CAT TABS */
-.cat-tabs-w{background:#fff;border-bottom:1px solid var(--gm)}
-.cat-tabs{max-width:var(--mw);margin:0 auto;padding:0 32px;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none}
-.cat-tabs::-webkit-scrollbar{display:none}
-@media(max-width:768px){.cat-tabs{padding:0 16px}}
-.ct{font-size:13px;font-weight:600;padding:14px 16px;border-bottom:3px solid transparent;white-space:nowrap;cursor:pointer;letter-spacing:.01em;transition:color .14s,border-color .14s;background:none;border-top:none;border-left:none;border-right:none;color:var(--gt)}
-.ct:hover{color:var(--black)}
-.ct.a{color:var(--red);border-bottom-color:var(--red)}
-
-/* FILTER BAR */
-.fb-w{background:#fff;border-bottom:1px solid var(--gm);position:sticky;top:64px;z-index:100}
-@media(max-width:768px){.fb-w{top:56px}}
-.fb{max-width:var(--mw);margin:0 auto;padding:0 32px}
-@media(max-width:768px){.fb{padding:0 16px}}
-.fr{display:flex;align-items:center;gap:7px;padding:10px 0;overflow-x:auto;scrollbar-width:none}
-.fr::-webkit-scrollbar{display:none}
-.fs{width:1px;height:18px;background:var(--gm);flex-shrink:0;margin:0 4px}
-.fl{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--gt);white-space:nowrap;flex-shrink:0}
-.fp{display:inline-flex;align-items:center;background:#fff;border:1.5px solid var(--gm);border-radius:4px;color:var(--gd);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;padding:6px 11px;cursor:pointer;white-space:nowrap;transition:all .14s;font-family:var(--font);flex-shrink:0}
-.fp:hover{border-color:var(--black);color:var(--black)}
-.fp.a{background:var(--black);border-color:var(--black);color:#fff}
-.fp-brand{font-size:12px;font-weight:800;letter-spacing:.01em;padding:6px 12px}
-.f-hr{border:none;border-top:1px solid var(--gm)}
-.fe{margin-left:auto;display:flex;align-items:center;gap:8px;flex-shrink:0}
-.fc{font-size:12px;color:var(--gt);font-weight:500}
-.fsel{font-family:var(--font);font-size:12px;font-weight:600;border:1.5px solid var(--gm);border-radius:4px;padding:6px 10px;background:#fff;cursor:pointer;color:var(--gd)}
-
-/* TAILORED SECTION */
-.tailored{padding:48px 0 0}
-.tailored-hdr{padding:0 0 20px;overflow:hidden}
-.tailored-row{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:4px}
-@media(max-width:600px){.tailored-row{flex-direction:column;align-items:flex-start;gap:8px}}
-
-/* BRAND SCROLL */
-.brand-scroll-w{overflow-x:auto;scrollbar-width:none;margin-bottom:32px;border-top:1px solid var(--gm);border-bottom:1px solid var(--gm)}
-.brand-scroll-w::-webkit-scrollbar{display:none}
-.brand-scroll{display:flex;align-items:center;padding:14px 32px;gap:0;max-width:var(--mw);margin:0 auto}
-@media(max-width:768px){.brand-scroll{padding:12px 16px}}
-.bi{flex:0 0 auto;padding:8px 22px;border-right:1px solid var(--gm);cursor:pointer;transition:background .14s;display:flex;align-items:center;justify-content:center}
-.bi:last-child{border-right:none}
-.bi:first-child{padding-left:0}
-.bi:hover{background:var(--gl)}
-.bl{font-size:13px;font-weight:900;letter-spacing:-.01em;color:var(--gd);text-transform:uppercase;white-space:nowrap;transition:color .14s}
-.bi:hover .bl{color:var(--black)}
-.bl-nike{letter-spacing:.03em}
-.bl-adidas{letter-spacing:.07em}
-.bl-asics{font-style:italic;letter-spacing:.04em}
-.bl-on{font-size:20px;letter-spacing:-.05em}
-.bl-fila{font-style:italic;letter-spacing:.07em}
+/* BRAND FILTER */
+.brand-filter-bar{border-bottom:1px solid var(--gm);padding:14px 0;margin-bottom:24px}
+.brand-filter-row{display:flex;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;flex-wrap:wrap}
+.brand-filter-row::-webkit-scrollbar{display:none}
+.bf-btn{font-family:var(--font);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:7px 14px;border-radius:4px;border:1.5px solid var(--gm);background:#fff;color:var(--gd);cursor:pointer;white-space:nowrap;transition:all .14s;flex-shrink:0}
+.bf-btn:hover{border-color:var(--black)}
+.bf-btn.active{background:var(--black);border-color:var(--black);color:#fff}
 
 /* PRODUCT GRID */
 .prod-sec{padding:0 0 56px}
-.pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-@media(max-width:1100px){.pgrid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:768px){.pgrid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.pgrid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+@media(max-width:1200px){.pgrid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:900px){.pgrid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){.pgrid{grid-template-columns:repeat(2,1fr);gap:10px}}
 @media(max-width:380px){.pgrid{grid-template-columns:1fr}}
 .pgrid-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;padding-top:28px}
 .pgrid-title{font-size:20px;font-weight:800;letter-spacing:-.03em}
@@ -185,19 +145,6 @@ button{font-family:var(--font);cursor:pointer}
 .ec-price{font-size:19px;font-weight:800;color:#fff}
 .load-more{text-align:center;margin-top:36px}
 
-/* GENDER TILES */
-.gender-tiles{display:grid;grid-template-columns:1fr 1fr;gap:3px}
-@media(max-width:640px){.gender-tiles{grid-template-columns:1fr}}
-.gt-tile{position:relative;aspect-ratio:16/9;background:var(--gl);overflow:hidden;cursor:pointer;display:flex;align-items:flex-end}
-.gt-ph{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:6px}
-.gt-ph-t{font-size:10px;color:rgba(0,0,0,.25);text-align:center;font-weight:600;line-height:1.6;padding:0 20px}
-.gt-ov{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,0) 60%)}
-.gt-c{position:relative;z-index:2;padding:20px 24px}
-@media(max-width:768px){.gt-c{padding:16px 18px}}
-.gt-label{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:3px}
-.gt-title{font-size:clamp(17px,3vw,25px);font-weight:900;color:#fff;letter-spacing:-.03em;line-height:1.1}
-.gt-sub{font-size:12px;color:rgba(255,255,255,.65);margin-top:3px}
-.gt-link{display:inline-flex;align-items:center;gap:5px;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#fff;margin-top:9px;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:1px}
 
 /* PRO PLAYERS */
 .pros{padding:52px 0}
@@ -284,6 +231,19 @@ button{font-family:var(--font);cursor:pointer}
 .ser-body{font-size:15px;color:rgba(255,255,255,.58);line-height:1.7}
 .ser-btns{display:flex;gap:12px;flex-wrap:wrap}
 
+/* NEW ARRIVALS & BEST SELLERS */
+.na-sec,.bs-sec{padding:44px 0;border-top:1px solid var(--gm)}
+.na-hdr,.bs-hdr{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:20px;gap:12px}
+.na-title,.bs-title{font-size:22px;font-weight:900;letter-spacing:-.03em}
+.na-sub,.bs-sub{font-size:13px;color:var(--gt);margin-top:3px}
+.na-link,.bs-link{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red);white-space:nowrap;flex-shrink:0}
+.na-scroll,.bs-scroll{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+@media(max-width:1100px){.na-scroll,.bs-scroll{grid-template-columns:repeat(5,1fr)}}
+@media(max-width:900px){.na-scroll,.bs-scroll{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:700px){.na-scroll,.bs-scroll{display:flex;overflow-x:auto;gap:12px;scrollbar-width:none;padding-bottom:4px}}
+@media(max-width:700px){.na-scroll::-webkit-scrollbar,.bs-scroll::-webkit-scrollbar{display:none}}
+@media(max-width:700px){.na-scroll .pc,.bs-scroll .pc{min-width:160px;flex-shrink:0}}
+
 /* GUIDES */
 .guides{padding:52px 0}
 .guides-hdr{display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:28px;gap:16px}
@@ -332,11 +292,6 @@ button{font-family:var(--font);cursor:pointer}
 .live-dot{width:7px;height:7px;background:#4ade80;border-radius:50%;animation:blink 1.8s infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.35}}
 
-/* FILTER ROW FADE EDGES (mobile scroll indicator) */
-.fb-w{position:relative}
-.fr-wrap{position:relative}
-.fr-wrap::after{content:'';position:absolute;right:0;top:0;bottom:0;width:40px;background:linear-gradient(to right,transparent,#fff);pointer-events:none;z-index:2}
-@media(min-width:900px){.fr-wrap::after{display:none}}
 
 /* MOBILE PRODUCT CARD — limit pills on small screens */
 @media(max-width:480px){
@@ -404,15 +359,6 @@ button{font-family:var(--font);cursor:pointer}
 .rw-tier.plat{border-color:#b0c4de;color:#b0c4de}
 .rw-tier.diam{border-color:#a8d8ff;color:#a8d8ff}
 
-/* HELP CALLOUT (team is here) */
-.help-bar{background:var(--blue);padding:16px 32px}
-.help-bar-inner{max-width:var(--mw);margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:768px){.help-bar{padding:14px 16px}}
-.help-text{display:flex;align-items:center;gap:12px}
-.help-ico{width:32px;height:32px;background:rgba(255,255,255,.15);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.help-ico svg{width:16px;height:16px;stroke:#fff;fill:none;stroke-width:2}
-.help-copy{font-size:13px;color:#fff;font-weight:600;line-height:1.45}
-.help-copy span{opacity:.75;font-weight:400}
 
 /* 25-YEAR SOCIAL PROOF BADGE */
 .proof-bar{background:var(--gl);border-top:1px solid var(--gm);border-bottom:1px solid var(--gm);padding:14px 32px}
@@ -507,117 +453,30 @@ button{font-family:var(--font);cursor:pointer}
   </div>
 </section>
 
-<!-- CATEGORY TABS -->
-<div class="cat-tabs-w">
-  <div class="cat-tabs">
-    <button class="ct a">Type</button>
-    <button class="ct">Shop by Brand</button>
-    <button class="ct">New Arrivals</button>
-    <button class="ct">Best Sellers</button>
-    <button class="ct">Shoes On Sale</button>
-    <button class="ct">Blog &amp; Video</button>
-  </div>
-</div>
-
-<!-- FILTER BAR -->
-<div class="fb-w">
-  <div class="fb">
-    <div class="fr-wrap">
-      <div class="fr">
-        <span class="fl">Brand</span><div class="fs"></div>
-        <button class="fp a">All</button>
-        <button class="fp fp-brand">Nike</button>
-        <button class="fp fp-brand">Adidas</button>
-        <button class="fp fp-brand">ASICS</button>
-        <button class="fp fp-brand">New Balance</button>
-        <button class="fp fp-brand">Wilson</button>
-        <button class="fp fp-brand">K-Swiss</button>
-        <button class="fp fp-brand">On</button>
-        <button class="fp fp-brand">+ More</button>
-        <div class="fe">
-          <span class="fc">148 styles</span>
-          <select class="fsel">
-            <option>Best Sellers</option>
-            <option>Price: Low–High</option>
-            <option>Price: High–Low</option>
-            <option>Newest First</option>
-          </select>
-        </div>
-      </div>
-    </div>
-    <hr class="f-hr">
-    <div class="fr-wrap">
-      <div class="fr">
-        <span class="fl">Play Style</span><div class="fs"></div>
-        <button class="fp">Max Stability</button>
-        <button class="fp">Speed</button>
-        <button class="fp">Max Cushion</button>
-        <button class="fp">Durability</button>
-        <div class="fs"></div>
-        <span class="fl">Court</span><div class="fs"></div>
-        <button class="fp">All-Court</button>
-        <button class="fp">Hard Court</button>
-        <button class="fp">Clay Court</button>
-        <div class="fs"></div>
-        <button class="fp">Wide Fit</button>
-        <button class="fp">Pro Worn</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- TAILORED FOR YOUR GAME -->
-<section class="tailored" id="products">
-  <div class="wrap tailored-hdr">
-    <div class="tailored-row">
-      <div>
-        <span class="ey">Tailored For Your Game</span>
-        <p style="font-size:13px;color:var(--gt);margin-top:2px">Select a brand to see the best tennis shoes for you</p>
-      </div>
-      <a href="#" class="btn btn-o btn-s">View All</a>
-    </div>
-  </div>
-
-  <!-- BRAND SCROLL -->
-  <div class="brand-scroll-w">
-    <div class="brand-scroll">
-      <div class="bi"><span class="bl bl-nike">Nike</span></div>
-      <div class="bi"><span class="bl bl-adidas">Adidas</span></div>
-      <div class="bi"><span class="bl bl-asics">ASICS</span></div>
-      <div class="bi"><span class="bl">New Balance</span></div>
-      <div class="bi"><span class="bl">Wilson</span></div>
-      <div class="bi"><span class="bl">K·Swiss</span></div>
-      <div class="bi"><span class="bl bl-on">On</span></div>
-      <div class="bi"><span class="bl bl-fila">FILA</span></div>
-      <div class="bi"><span class="bl">Diadora</span></div>
-      <div class="bi"><span class="bl">Lacoste</span></div>
-    </div>
-  </div>
-
-  <!-- TEAM HELP BAR -->
-  <div class="help-bar">
-    <div class="help-bar-inner">
-      <div class="help-text">
-        <div class="help-ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
-        <div class="help-copy">Our team is here to help you find the right shoe. <span>Whether you're a first-time buyer or a seasoned player, we know tennis.</span></div>
-      </div>
-      <div style="display:flex;gap:10px;flex-shrink:0;flex-wrap:wrap">
-        <a href="#" class="btn btn-ow btn-s">Chat With Us</a>
-        <a href="#" class="btn btn-s" style="background:rgba(255,255,255,.15);color:#fff;border:none">1-713-435-4800</a>
-      </div>
-    </div>
-  </div>
-
+<!-- PRODUCT GRID -->
+<section id="products">
   <!-- PRODUCT GRID -->
   <div class="wrap prod-sec">
     <div class="pgrid-header">
       <h2 class="pgrid-title">Men's Tennis Shoes</h2>
-      <span class="pgrid-count">148 styles · All Brands</span>
+      <span class="pgrid-count" id="pgrid-count">148 styles · All Brands</span>
     </div>
-    <div class="pgrid">
+    <div class="brand-filter-bar">
+      <div class="brand-filter-row">
+        <button class="bf-btn active" data-filter="all">All</button>
+        <button class="bf-btn" data-filter="Nike">Nike</button>
+        <button class="bf-btn" data-filter="Adidas">Adidas</button>
+        <button class="bf-btn" data-filter="ASICS">ASICS</button>
+        <button class="bf-btn" data-filter="New Balance">New Balance</button>
+        <button class="bf-btn" data-filter="Wilson">Wilson</button>
+        <button class="bf-btn" data-filter="K-Swiss">K-Swiss</button>
+        <button class="bf-btn" data-filter="On">On</button>
+      </div>
+    </div>
+    <div class="pgrid" id="pgrid">
 
       <!-- Card 1 -->
-      <div class="pc">
+      <div class="pc" data-brand="Nike">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Nike Air Zoom Vapor 11</div></div>
           <span class="pc-badge b-new">New</span><div class="qv">Quick View</div>
@@ -633,7 +492,7 @@ button{font-family:var(--font);cursor:pointer}
       </div>
 
       <!-- Card 2 -->
-      <div class="pc">
+      <div class="pc" data-brand="ASICS">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">ASICS Gel-Resolution 9</div></div>
           <div class="qv">Quick View</div>
@@ -649,7 +508,7 @@ button{font-family:var(--font);cursor:pointer}
       </div>
 
       <!-- Card 3 -->
-      <div class="pc">
+      <div class="pc" data-brand="Adidas">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Adidas Adizero Ubersonic 4</div></div>
           <span class="pc-badge b-sale">Sale</span><div class="qv">Quick View</div>
@@ -665,7 +524,7 @@ button{font-family:var(--font);cursor:pointer}
       </div>
 
       <!-- Card 4 -->
-      <div class="pc">
+      <div class="pc" data-brand="New Balance">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">New Balance Fresh Foam Lav v2</div></div>
           <div class="qv">Quick View</div>
@@ -700,7 +559,7 @@ button{font-family:var(--font);cursor:pointer}
       </div>
 
       <!-- Card 5 -->
-      <div class="pc">
+      <div class="pc" data-brand="Wilson">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Wilson Rush Pro 4.0</div></div>
           <div class="qv">Quick View</div>
@@ -716,7 +575,7 @@ button{font-family:var(--font);cursor:pointer}
       </div>
 
       <!-- Card 6 -->
-      <div class="pc">
+      <div class="pc" data-brand="On">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">On The Roger Pro</div></div>
           <span class="pc-badge b-new">New</span><div class="qv">Quick View</div>
@@ -732,7 +591,7 @@ button{font-family:var(--font);cursor:pointer}
       </div>
 
       <!-- Card 7 -->
-      <div class="pc">
+      <div class="pc" data-brand="K-Swiss">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">K-Swiss Hypercourt Express 2</div></div>
           <div class="qv">Quick View</div>
@@ -748,7 +607,7 @@ button{font-family:var(--font);cursor:pointer}
       </div>
 
       <!-- Card 8 -->
-      <div class="pc">
+      <div class="pc" data-brand="Nike">
         <div class="pc-img">
           <div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Nike React Vapor NXT HC</div></div>
           <div class="qv">Quick View</div>
@@ -766,6 +625,48 @@ button{font-family:var(--font);cursor:pointer}
     </div>
     <div class="load-more">
       <button class="btn btn-o" style="padding:14px 48px">Load More Shoes (140 remaining)</button>
+    </div>
+  </div>
+</section>
+
+<!-- NEW ARRIVALS -->
+<section class="na-sec">
+  <div class="wrap">
+    <div class="na-hdr">
+      <div>
+        <div class="na-title">New Arrivals</div>
+        <div class="na-sub">Shop the newest tennis shoes</div>
+      </div>
+      <a href="#" class="na-link">Shop Shoes New Arrivals ›</a>
+    </div>
+    <div class="na-scroll">
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Nike Air Zoom Vapor Cage 4</div></div><span class="pc-badge b-new">New</span></div><div class="pc-body"><span class="pc-brand">Nike</span><div class="pc-price"><span class="p-now">$170.00</span></div><div class="pc-name">Men's Air Zoom Vapor Cage 4 Tennis Shoes White and Black</div><div class="pc-rat"><span class="stars">★★★★☆</span><span class="rc">4.5</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Nike Zoom Vapor 12</div></div><span class="pc-badge b-new">New</span></div><div class="pc-body"><span class="pc-brand">Nike</span><div class="pc-price"><span class="p-now">$180.00</span></div><div class="pc-name">Men's Zoom Vapor 12 Tennis Shoes White and Lt Crimson</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.8</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">ASICS GEL-Resolution X</div></div></div><div class="pc-body"><span class="pc-brand">ASICS</span><div class="pc-price"><span class="p-now">$159.95</span></div><div class="pc-name">Men's GEL-Resolution X Tennis Shoes White and Black</div><div class="pc-rat"><span class="stars">★★★★☆</span><span class="rc">4.6</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Adidas Courtflash</div></div></div><div class="pc-body"><span class="pc-brand">Adidas</span><div class="pc-price"><span class="p-now">$55.00</span></div><div class="pc-name">Juniors' Courtflash Tennis Shoes Core Black and Silver Metallic</div><div class="pc-rat"><span class="stars">★★★★☆</span><span class="rc">4.4</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Nike Zoom Vapor Pro 3</div></div></div><div class="pc-body"><span class="pc-brand">Nike</span><div class="pc-price"><span class="p-now">$135.00</span></div><div class="pc-name">Women's Zoom Vapor Pro 3 Tennis Shoes Black and White</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.8</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Nike Vapor 12 Hypersmash</div></div><span class="pc-badge b-new">New</span></div><div class="pc-body"><span class="pc-brand">Nike</span><div class="pc-price"><span class="p-now">$190.00</span></div><div class="pc-name">Men's Vapor 12 Hypersmash Tennis Shoes Hyper Pink and Black</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.8</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BEST SELLERS -->
+<section class="bs-sec">
+  <div class="wrap">
+    <div class="bs-hdr">
+      <div>
+        <div class="bs-title">Best Sellers</div>
+        <div class="bs-sub">Shop best women's tennis shoes from all the top brands</div>
+      </div>
+      <a href="#" class="bs-link">Shop Top Women's Shoes ›</a>
+    </div>
+    <div class="bs-scroll">
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Mizuno Wave Exceed Tour 7 AC</div></div></div><div class="pc-body"><span class="pc-brand">Mizuno</span><div class="pc-price"><span class="p-now">$149.95</span></div><div class="pc-name">Unisex Wave Exceed Tour 7 AC Tennis Shoes</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.7</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">On THE ROGER Pro Fire</div></div></div><div class="pc-body"><span class="pc-brand">ON</span><div class="pc-price"><span class="p-now">$219.95</span></div><div class="pc-name">Women's THE ROGER Pro Fire Tennis Shoes</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.9</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Adidas Stella McCartney</div></div></div><div class="pc-body"><span class="pc-brand">Adidas</span><div class="pc-price"><span class="p-now">$199.95</span></div><div class="pc-name">Women's Stella McCartney Tennis Shoes</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.8</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">Adidas Stella McCartney 2</div></div></div><div class="pc-body"><span class="pc-brand">Adidas</span><div class="pc-price"><span class="p-now">$199.95</span></div><div class="pc-name">Women's Stella McCartney Tennis Shoes Black</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.8</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">New Balance Fresh Foam X CT-Rally</div></div></div><div class="pc-body"><span class="pc-brand">New Balance</span><div class="pc-price"><span class="p-now">$149.99</span></div><div class="pc-name">Women's Fresh Foam X CT-Rally Tennis Shoes</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.8</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
+      <div class="pc"><div class="pc-img"><div class="pc-img-ph"><div class="ph-ico"><svg viewBox="0 0 24 24"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div><div class="ph-t">On THE ROGER Pro Fire 2</div></div></div><div class="pc-body"><span class="pc-brand">ON</span><div class="pc-price"><span class="p-now">$219.95</span></div><div class="pc-name">Women's THE ROGER Pro Fire Tennis Shoes — Yellow</div><div class="pc-rat"><span class="stars">★★★★★</span><span class="rc">4.9</span></div><div class="pc-atc"><button class="btn btn-r btn-f btn-s">Add to Cart</button></div></div></div>
     </div>
   </div>
 </section>
@@ -829,29 +730,6 @@ button{font-family:var(--font);cursor:pointer}
   </div>
 </div>
 
-<!-- GENDER EDITORIAL TILES -->
-<div class="gender-tiles">
-  <div class="gt-tile">
-    <div class="gt-ph"><div class="gt-ph-t">Men's Shoes Editorial Image<br>Lifestyle court shot — 720×405px recommended</div></div>
-    <div class="gt-ov"></div>
-    <div class="gt-c">
-      <div class="gt-label">Men's Shoes</div>
-      <div class="gt-title">In a Variety of Styles</div>
-      <div class="gt-sub">148 styles across all brands</div>
-      <span class="gt-link">Shop Men's Shoes →</span>
-    </div>
-  </div>
-  <div class="gt-tile">
-    <div class="gt-ph"><div class="gt-ph-t">Women's Shoes Editorial Image<br>Lifestyle court shot — 720×405px recommended</div></div>
-    <div class="gt-ov"></div>
-    <div class="gt-c">
-      <div class="gt-label">Women's Shoes</div>
-      <div class="gt-title">In a Variety of Styles</div>
-      <div class="gt-sub">Shop the women's collection</div>
-      <span class="gt-link">Shop Women's Shoes →</span>
-    </div>
-  </div>
-</div>
 
 <!-- ACTIVE PRO PLAYERS -->
 <section class="pros">
@@ -926,7 +804,7 @@ button{font-family:var(--font);cursor:pointer}
         <div class="pt-lnk">Shop Stability Shoes <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </div>
     </a>
-    <a href="#" class="pt pt-dk">
+    <a href="#" class="pt">
       <div class="pt-num">02</div>
       <div class="pt-body">
         <div class="pt-name">All-Court Mover</div>
@@ -942,36 +820,6 @@ button{font-family:var(--font);cursor:pointer}
         <div class="pt-lnk">Shop Lightweight Shoes <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
       </div>
     </a>
-  </div>
-</section>
-
-<!-- SHOP WITH CONFIDENCE -->
-<section class="trust">
-  <div class="wrap">
-    <div class="trust-hdr">
-      <span class="ey" style="display:block;text-align:center">Shop With Confidence</span>
-      <h2 class="trust-hl">Every reason to buy.<br>Zero reasons to hesitate.</h2>
-    </div>
-    <div class="trust-grid">
-      <div class="tc">
-        <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-        <div class="tc-title">Price Match Guarantee</div>
-        <div class="tc-body">Found it cheaper somewhere else? We'll match any authorized retailer's price within 7 days of your purchase — no runaround, no conditions.</div>
-        <a href="#" class="tc-lnk">See Full Policy →</a>
-      </div>
-      <div class="tc">
-        <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
-        <div class="tc-title">Every Shoe is the Real Thing</div>
-        <div class="tc-body">We're an authorized retailer for every brand on this page. Full manufacturer warranty coverage. No gray-market product — ever.</div>
-        <a href="#" class="tc-lnk">About Our Brands →</a>
-      </div>
-      <div class="tc">
-        <div class="tc-ico"><svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></div>
-        <div class="tc-title">Free Returns. No Stress.</div>
-        <div class="tc-body">Wrong size? Doesn't feel right on court? Returns are free within 90 days on unworn items. We send the label — you drop it off at UPS.</div>
-        <a href="#" class="tc-lnk">Full Return Policy →</a>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -1019,20 +867,55 @@ button{font-family:var(--font);cursor:pointer}
   </div>
 </section>
 
-<!-- THE SHOE SERIOUS PLAYERS HAVE BEEN WAITING FOR -->
+<!-- SHOP WITH CONFIDENCE -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-hdr">
+      <span class="ey" style="display:block;text-align:center">Shop With Confidence</span>
+      <h2 class="trust-hl">Every reason to buy.<br>Zero reasons to hesitate.</h2>
+    </div>
+    <div class="trust-grid">
+      <div class="tc">
+        <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+        <div class="tc-title">Price Match Guarantee</div>
+        <div class="tc-body">Found it cheaper somewhere else? We'll match any authorized retailer's price within 7 days of your purchase — no runaround, no conditions.</div>
+        <a href="#" class="tc-lnk">See Full Policy →</a>
+      </div>
+      <div class="tc">
+        <div class="tc-ico"><svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg></div>
+        <div class="tc-title">Every Shoe is the Real Thing</div>
+        <div class="tc-body">We're an authorized retailer for every brand on this page. Full manufacturer warranty coverage. No gray-market product — ever.</div>
+        <a href="#" class="tc-lnk">About Our Brands →</a>
+      </div>
+      <div class="tc">
+        <div class="tc-ico"><svg viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.51"/></svg></div>
+        <div class="tc-title">Free Returns. No Stress.</div>
+        <div class="tc-body">Wrong size? Doesn't feel right on court? Returns are free within 90 days on unworn items. We send the label — you drop it off at UPS.</div>
+        <a href="#" class="tc-lnk">Full Return Policy →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED BEST SELLER -->
 <section class="serious">
   <div class="ser-in">
     <div class="ser-img">
       <div class="ph-ico" style="background:rgba(255,255,255,.07)"><svg viewBox="0 0 24 24" style="stroke:rgba(255,255,255,.25)"><path d="M3 17l4-8 4 4 3-6 4 10"/></svg></div>
-      <div class="ser-ph">Shoe Feature Image<br>Clean product shot — 600×450px</div>
+      <div class="ser-ph">Product Shot<br>ASICS Gel-Resolution 9<br>600×450px recommended</div>
     </div>
     <div class="ser-cont">
-      <span class="ey ey-w">Built for the Game</span>
-      <h2 class="ser-title">The shoe <em>serious players</em><br>have been waiting for.</h2>
-      <p class="ser-body">Shop our collection of men's shoes to find premium options for improving comfort, stability, and on-court performance. Whether you need help generating power, spin, or depth — we've got you covered.</p>
+      <span class="ey ey-w">Best Seller Right Now</span>
+      <h2 class="ser-title">The <em>#1 Stability Shoe</em><br>on the court right now.</h2>
+      <p class="ser-body">The ASICS Gel-Resolution 9 is our top-selling men's shoe for a reason — unmatched lateral support, a durable PGuard toe, and gel cushioning that holds up over long, grinding matches. Our equipment team recommends it for baseliners above anything else we carry.</p>
+      <div class="ser-stats" style="display:flex;gap:24px;flex-wrap:wrap;margin-top:4px">
+        <div><div style="font-size:22px;font-weight:900;color:#fff">4.8</div><div style="font-size:11px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;font-weight:700">Avg. Rating</div></div>
+        <div><div style="font-size:22px;font-weight:900;color:#fff">287+</div><div style="font-size:11px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;font-weight:700">Reviews</div></div>
+        <div><div style="font-size:22px;font-weight:900;color:var(--red)">#1</div><div style="font-size:11px;color:rgba(255,255,255,.45);text-transform:uppercase;letter-spacing:.08em;font-weight:700">Stability Pick</div></div>
+      </div>
       <div class="ser-btns">
-        <a href="#products" class="btn btn-r">Shop Men's Shoes</a>
-        <a href="#" class="btn btn-ow">View Best Sellers</a>
+        <a href="#" class="btn btn-r">Shop This Shoe — $159.99</a>
+        <a href="#" class="btn btn-ow">View All Best Sellers</a>
       </div>
     </div>
   </div>
@@ -1131,5 +1014,27 @@ button{font-family:var(--font);cursor:pointer}
 
 <button class="live"><div class="live-dot"></div>Live Support</button>
 
+<script>
+(function(){
+  const btns = document.querySelectorAll('.bf-btn');
+  const grid = document.getElementById('pgrid');
+  const countEl = document.getElementById('pgrid-count');
+  btns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      btns.forEach(function(b){ b.classList.remove('active'); });
+      this.classList.add('active');
+      const filter = this.dataset.filter;
+      let visible = 0;
+      grid.querySelectorAll('.pc').forEach(function(card){
+        const brand = (card.dataset.brand || '').toLowerCase();
+        const show = filter === 'all' || brand === filter.toLowerCase();
+        card.style.display = show ? '' : 'none';
+        if(show) visible++;
+      });
+      countEl.textContent = visible + ' styles · ' + (filter === 'all' ? 'All Brands' : filter);
+    });
+  });
+})();
+</script>
 </body>
 </html>
