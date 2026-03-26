@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/te-mens-shoes-v32.html" }
+  ]
+}
